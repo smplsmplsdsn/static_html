@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開発前のデザインコーディングに便利！</title>
+</head>
+<body>
+
+  <div data-template-path="./include/header.html"></div>
+  <div data-template-path="./include/list.html" class="temp-list-blog"></div>
+  <div data-template-path="./include/list.html"></div>
+  <div data-template-path="./include/footer.html"></div>
+
+  <script>
+    const init = function () {
+      console.log('Include Files loaded')
+    }
+  </script>
+  <script src="./assets/js/preload.js"></script>
+</body>
+</html>
