@@ -4,7 +4,7 @@
  * ファイル呼び出し時、インクルードファイルをすべて読み込み後、init() を実行する
  * init という関数名を変更したい場合は、変数init_func を値を変更する
  */
- document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() { 
   const init_func = (typeof init === 'function')? init: null,
         temp_path = 'data-template-path',
         tgt = document.querySelectorAll('[' + temp_path + ']'),
